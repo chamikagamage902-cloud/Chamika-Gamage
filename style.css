@@ -792,11 +792,34 @@ ul {
   }
 
   .hero-text-bg {
-    font-size: clamp(3.5rem, 18vw, 6rem);
+    font-size: clamp(3rem, 12vw, 5.5rem);
   }
 
   .hero-image-wrap {
-    width: clamp(160px, 55vw, 260px);
+    width: clamp(140px, 45vw, 240px);
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    bottom: 5rem;
+  }
+
+  .cursive-label {
+    font-size: 2.2rem;
+  }
+
+  .hero-typed-wrap {
+    bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 5%;
   }
 }
 

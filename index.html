@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" style="color-scheme:dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamika Gamage | Creative Portfolio</title>
+    <meta name="description"
+        content="Creative Portfolio of Chamika Gamage – Graphic Designer, Web Developer, Video Editor & Programmer from Sri Lanka." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Sacramento&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-ring"></div>
+        <span class="loader-name">C G</span>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ── NAVBAR ── -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">CHAMIKA GAMAGE</a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">✕</button>
+        <ul>
+            <li><a href="#home" class="mob-link">Home</a></li>
+            <li><a href="#about" class="mob-link">About</a></li>
+            <li><a href="#skills" class="mob-link">Skills</a></li>
+            <li><a href="#contact" class="mob-link">Contact</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+        <div class="hero-frame">
+            <div class="hero-text-bg">CHAMIKA</div>
+            <div class="hero-label-top">
+                <span class="cursive-label">I am</span>
+            </div>
+            <!-- Canvas Particles -->
+            <canvas class="hero-particles" id="particleCanvas"></canvas>
+
+            <div class="hero-image-wrap">
+                <img src="chamika-hero.png" alt="Chamika Gamage" class="hero-img" id="heroImg" />
+                <div class="hero-glow"></div>
+            </div>
+            <div class="hero-bottom">
+                <span class="hero-sub-left">Creative Portfolio Presentation</span>
+                <span class="hero-sub-right">Presented By: Chamika Gamage</span>
+            </div>
+            <!-- Typed subtitle -->
+            <div class="hero-typed-wrap">
+                <span class="hero-typed-prefix">I'm a </span><span class="hero-typed" id="heroTyped"></span><span
+                    class="typed-cursor">|</span>
+            </div>
+        </div>
+        <div class="hero-footer">
+            <div class="social-icons">
+                <a href="#" class="soc-btn" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.807 5.624-5.48 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="#" class="soc-btn play" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="website-link">chamika.dev</div>
+        </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-tag" data-reveal>Who I Am</div>
+            <h2 class="section-title" data-reveal data-delay="100">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-img-col">
+                    <div class="about-img-wrap">
+                        <img src="chamika.jpg" alt="Chamika Gamage" class="about-img" />
+                        <div class="about-badge">
+                            <span class="badge-num" id="ageDisplay">17</span>
+                            <span class="badge-label">Years Old</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-col">
+                    <h3 class="about-name">Chamika Gamage</h3>
+                    <p class="about-origin">🇱🇰 Sri Lanka</p>
+                    <p class="about-bio">
+                        I'm a passionate creative from the beautiful island of Sri Lanka. Born in 2008,
+                        I've spent my <span id="ageInline">17</span> years developing skills across
+                        multiple creative and technical disciplines — from designing stunning visuals
+                        to building web experiences and crafting compelling video content.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-num" id="yearsExp">3+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">5+</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">🇱🇰</span>
+                            <span class="stat-label">Sri Lanka</span>
+                        </div>
+                    </div>
+                    <div class="about-roles">
+                        <span class="role-tag">Graphic Designer</span>
+                        <span class="role-tag">Web Developer</span>
+                        <span class="role-tag">Video Editor</span>
+                        <span class="role-tag">Programmer</span>
+                        <span class="role-tag">Innovator</span>
+                    </div>
+                    <a href="#contact" class="btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-tag" data-reveal>What I Do</div>
+            <h2 class="section-title" data-reveal data-delay="100">My <span class="accent">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Graphic Design</h3>
+                    <p>Creating visually stunning designs, logos, and brand identities that captivate and communicate
+                        effectively.</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Building modern, responsive web experiences using HTML, CSS, and JavaScript with clean, efficient
+                        code.</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill:80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎬</div>
+                    <h3>Video Editing</h3>
+                    <p>Crafting cinematic video content with compelling storytelling, effects, and professional
+                        post-production.</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill:78%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Programming</h3>
+                    <p>Writing clean, efficient code and developing innovative solutions to complex problems across
+                        various platforms.</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill:75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💡</div>
+                    <h3>Innovation</h3>
+                    <p>Turning creative ideas into real-world projects with an innovative mindset and problem-solving
+                        approach.</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive user interfaces and experiences that delight users and achieve business
+                        goals.</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill:72%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="contact section" id="contact">
+        <div class="container contact-inner">
+            <div class="section-tag" data-reveal>Let's Talk</div>
+            <h2 class="section-title" data-reveal data-delay="100">Get In <span class="accent">Touch</span></h2>
+            <p class="contact-sub" data-reveal data-delay="200">Have a project in mind or just want to say hi? I'd love
+                to hear from you!</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" id="nameInput" placeholder="Your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" id="emailInput" placeholder="your@email.com" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subjectInput">Subject</label>
+                    <input type="text" id="subjectInput" placeholder="What's this about?" required />
+                </div>
+                <div class="form-group">
+                    <label for="messageInput">Message</label>
+                    <textarea id="messageInput" rows="5" placeholder="Tell me about your project..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" id="submitBtn">Send Message ✉️</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <p>© <span id="footerYear"></span> Chamika Gamage · Sri Lanka 🇱🇰</p>
+        <p class="footer-sub">Made with ❤️ and creativity</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

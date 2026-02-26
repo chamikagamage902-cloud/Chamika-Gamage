@@ -339,8 +339,13 @@ ul {
   height: 15px;
 }
 
-.soc-btn.play {
-  background: var(--accent2);
+.soc-btn.discord {
+  background: #5865F2;
+  color: #fff;
+}
+
+.soc-btn.email {
+  background: #EA4335;
   color: #fff;
 }
 

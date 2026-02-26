@@ -112,7 +112,7 @@ document.querySelectorAll('a, button, .skill-card, .soc-btn, .role-tag').forEach
 (function typedEffect() {
   const el = document.getElementById('heroTyped');
   if (!el) return;
-  const roles = ['Graphic Designer', 'Web Developer', 'Video Editor', 'Programmer', 'Innovator'];
+  const roles = ['Graphic Designer', 'Logo and Art Designer', 'Web Developer', 'Video Editor', 'Programmer'];
   let ri = 0, ci = 0, deleting = false;
 
   function tick() {

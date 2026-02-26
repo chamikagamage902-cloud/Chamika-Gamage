@@ -348,10 +348,7 @@ ul {
   transform: scale(1.15);
 }
 
-.website-link {
-  color: var(--text-muted);
-  font-size: 0.82rem;
-}
+/* website-link removed */
 
 /* ─── SECTIONS ───────────────────────────────────────── */
 .section {
@@ -787,27 +784,19 @@ ul {
     width: clamp(140px, 45vw, 240px);
   }
 
-  .hero-bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    text-align: center;
-    bottom: 5rem;
-  }
-
   .cursive-label {
     font-size: 2.2rem;
   }
 
   .hero-typed-wrap {
-    bottom: 2rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 
   .hero-footer {
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem 5%;
+    gap: 1.2rem;
+    padding: 1.5rem 5% 2rem;
+    text-align: center;
   }
 }
 
@@ -926,15 +915,22 @@ body:hover .cursor-ring {
 
 /* ── TYPED TEXT ──────────────────────────────────────── */
 .hero-typed-wrap {
-  position: absolute;
-  top: 88%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   z-index: 5;
   white-space: nowrap;
-  font-size: clamp(.85rem, 2vw, 1.1rem);
+  font-size: 0.82rem;
   color: var(--text-muted);
-  animation: fadeSlideUp .8s .8s ease both;
+  animation: fadeIn .8s .8s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .hero-typed {

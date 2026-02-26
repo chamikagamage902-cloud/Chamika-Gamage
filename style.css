@@ -1,6 +1,6 @@
 /* ─── DESIGN TOKENS ─────────────────────────────────── */
 :root {
-  --accent: #f7c923;
+  --accent: #ffdd00;
   --accent2: #7b2fff;
   --bg: #0a0a0a;
   --bg2: #111111;
@@ -431,8 +431,8 @@ ul {
 .about-img {
   width: 100%;
   border-radius: var(--radius);
-  border: 3px solid var(--accent2);
-  box-shadow: 0 0 60px rgba(123, 47, 255, 0.3);
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 50px rgba(255, 221, 0, 0.25);
   aspect-ratio: 3/4;
   object-fit: cover;
   object-position: top;
